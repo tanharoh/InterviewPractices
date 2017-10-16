@@ -3,6 +3,8 @@ import java.util.Stack;
 /**
  * Created by ilyar on 17-10-16
  * 有getMin功能的栈
+ * 压栈: stackData 压入所有新数字，stackMin只压入比栈中小的数字
+ * 弹栈: 如果stackData和stackMin栈顶中的元素相同则都弹栈，反之只有stackData弹栈
  */
 public class A01_getMinStack {
     private Stack<Integer> stackData;
