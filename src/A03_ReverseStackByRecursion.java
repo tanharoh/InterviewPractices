@@ -47,6 +47,6 @@ public class A03_ReverseStackByRecursion {
         System.out.println(stack.pop());
         System.out.println(stack.pop());
         System.out.println(stack.pop());
-        
+
     }
 }
