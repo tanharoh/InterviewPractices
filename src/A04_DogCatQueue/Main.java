@@ -3,17 +3,21 @@ package A04_DogCatQueue;
 public class Main {
     public static void main(String[] args) {
         DogCatQueue dogCatQueue = new DogCatQueue();
-        dogCatQueue.add(new Pet("cat"));
-        dogCatQueue.add(new Pet("dog"));
-        dogCatQueue.add(new Pet("dog"));
-        dogCatQueue.add(new Pet("cat"));
+        dogCatQueue.add(new Cat());
+        dogCatQueue.add(new Dog());
+        dogCatQueue.add(new Dog());
+        dogCatQueue.add(new Cat());
+
 
         System.out.println(dogCatQueue.pollDog().getPetType());
         System.out.println(dogCatQueue.pollCat().getPetType());
 
-        System.out.println("Is DogCatQueue Empty: " + dogCatQueue.isEmpty());
-        System.out.println("Is DogQueue Empty: " + dogCatQueue.isDogQueueEmpty());
-        System.out.println("Is CatQueue Empty: " + dogCatQueue.isCatQueueEmpty());
+        System.out.println("isDogCatQueueEmpty: " + dogCatQueue.isEmpty());
+        System.out.println("isDogQueueEmpty: " + dogCatQueue.isDogQueueEmpty());
+        System.out.println("isCatQueueEmpty: " + dogCatQueue.isCatQueueEmpty());
+
+        System.out.println(dogCatQueue.pollAll().getPetType());
+        System.out.println(dogCatQueue.pollAll().getPetType());
 
 
     }
