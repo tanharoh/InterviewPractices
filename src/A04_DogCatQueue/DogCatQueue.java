@@ -15,12 +15,15 @@ public class DogCatQueue {
     }
 
     public void add(Pet pet) {
-        if (pet.getPetType().equals("dog")) {
-            this.dogQ.add(new PetEnterQueue(pet, this.count++));
-        } else if (pet.getPetType().equals("cat")) {
-            this.catQ.add(new PetEnterQueue(pet, this.count++));
-        }else {
-            throw new RuntimeException("ERROR: Unrecognized pet!");
+        switch (pet.getPetType()) {
+            case "dog":
+                this.dogQ.add(new PetEnterQueue(pet, this.count++));
+                break;
+            case "cat":
+                this.catQ.add(new PetEnterQueue(pet, this.count++));
+                break;
+            default:
+                throw new RuntimeException("ERROR: Unrecognized pet!");
         }
     }
 

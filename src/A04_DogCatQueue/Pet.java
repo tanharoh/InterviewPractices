@@ -8,7 +8,7 @@ public class Pet {
     }
 
     public String getPetType() {
-        return type;
+        return this.type;
     }
 }
 

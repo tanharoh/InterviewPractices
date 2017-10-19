@@ -14,7 +14,7 @@ public class PetEnterQueue {
     }
 
     public long getCount() {
-        return count;
+        return this.count;
     }
 
     public String getEnterPetType() {
