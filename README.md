@@ -1,2 +1,2 @@
 # InterviewPractices
-> a Intellij Idea project
+> an Intellij Idea project
