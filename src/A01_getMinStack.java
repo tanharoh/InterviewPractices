@@ -27,7 +27,8 @@ public class A01_getMinStack {
             throw new RuntimeException("ERROR: StackData is empty.");
         }
         int value = this.stackData.pop();
-        if (value == this.getMin()) {
+        if (value == this.
+                getMin()) {
             this.stackMin.pop();
         }
         return value;
