@@ -1,9 +1,6 @@
 package A08_GetMaxTree;
 
-import util.TreeNode;
-
 import java.util.HashMap;
-import java.util.List;
 import java.util.Stack;
 
 public class GetMaxTree {
