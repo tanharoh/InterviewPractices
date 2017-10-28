@@ -3,6 +3,7 @@ import java.util.LinkedList;
 /**
  * Created by @author ilyar on 17-10-22
  * 用双端队列实现生成窗口最大值数组
+ * Page 19
  */
 public class A07_GetMaxWindow {
     public static int[] getMaxWindow(int[] arr, int w) {

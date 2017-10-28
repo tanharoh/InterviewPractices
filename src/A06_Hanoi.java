@@ -3,6 +3,7 @@ import java.util.Stack;
 /**
  * Created by @author ilyar on 17-10-21
  * 修改的汉诺塔问题，不能在最左边和最右边直接跳转
+ * Page 14
  */
 public class A06_Hanoi {
     public enum Action {No, LToM, MToL, MToR, RToM}

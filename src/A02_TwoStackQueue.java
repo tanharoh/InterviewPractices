@@ -6,6 +6,7 @@ import java.util.Stack;
  * 只有stackPush输入数据
  * 只有stackPop输出数据
  * stackPop 压入从stackPush弹出的数据
+ * Page 5
  */
 public class A02_TwoStackQueue {
     private Stack<Integer> stackPush;
